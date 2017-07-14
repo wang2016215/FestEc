@@ -16,6 +16,7 @@ public class ExampleApp extends Application {
 
         latte.init(this).
                 withApiHost("http://127.0.0.1/").
+                withApiHost("http://baidu.com/").
                 configure();
     }
 }
