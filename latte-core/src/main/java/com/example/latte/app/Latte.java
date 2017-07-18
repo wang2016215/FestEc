@@ -8,7 +8,7 @@ import java.util.HashMap;
  * Created by wanbin on 2017/7/14.
  */
 
-public  final class latte {
+public final class Latte {
 
 
     public static Configurator init(Context context){
@@ -17,7 +17,7 @@ public  final class latte {
         return Configurator.getInstance();
     }
 
-    private static HashMap<String, Object> getConfigurations() {
+    public static HashMap<String, Object> getConfigurations() {
         return Configurator.getInstance().getLatteConfigs();
     }
 
