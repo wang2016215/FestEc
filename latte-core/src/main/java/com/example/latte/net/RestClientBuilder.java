@@ -6,6 +6,7 @@ import com.example.latte.net.callback.IError;
 import com.example.latte.net.callback.IFailure;
 import com.example.latte.net.callback.IRequest;
 import com.example.latte.net.callback.ISuccess;
+import com.example.latte.net.download.DownloadHandler;
 import com.example.latte.ui.LoaderStyle;
 
 import java.io.File;
@@ -120,8 +121,12 @@ public class RestClientBuilder {
     public final RestClientBuilder loader(Context context) {
         this.mContext = context;
         this.mLoaderStyle = LoaderStyle.BallClipRotatePulseIndicator;
-        ;
+
         return this;
+    }
+
+    public final void download() {
+        new DownloadHandler(mUrl, PARAMS, mRequest, mDownloadDir, mExtension, mName, mSuccess, mFailure, mError).handleDownload();
     }
 
     public final RestClient build() {
