@@ -2,8 +2,6 @@ package com.example.latte.app;
 
 import android.content.Context;
 
-import java.util.HashMap;
-
 /**
  * Created by wanbin on 2017/7/14.
  */
@@ -19,8 +17,8 @@ public final class Latte {
         return Configurator.getInstance();
     }
 
-    public static HashMap<Object, Object> getConfigurations() {
-        return Configurator.getInstance().getLatteConfigs();
+    public static Configurator getConfigurations() {
+        return Configurator.getInstance();
     }
 
     public static <T> T getConfiguration(Object key) {

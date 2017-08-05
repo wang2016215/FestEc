@@ -3,12 +3,17 @@ package com.example.wanbin.festec;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
+import android.widget.Toast;
 
 import com.example.latte.activities.ProxyActivity;
 import com.example.latte.delegates.LatteDelegate;
 import com.example.latte.ec.launcher.LauncherDelegate;
+import com.example.latte.ec.sign.ISignListener;
+import com.example.latte.ec.sign.SignInDelegate;
+import com.example.latte.ui.launcher.ILauncherListener;
+import com.example.latte.ui.launcher.OnLauncherFinishTag;
 
-public class ExampleActivity extends ProxyActivity {
+public class ExampleActivity extends ProxyActivity implements ISignListener, ILauncherListener {
 
 
     @Override
@@ -23,7 +28,34 @@ public class ExampleActivity extends ProxyActivity {
     @Override
     public LatteDelegate setRootDelegate() {
         // return new ExampleDelegate();
-        return new LauncherDelegate();
+        // return new LauncherDelegate();
         // return new LauncherScrollDelegate();
+        return new LauncherDelegate();
+    }
+
+    @Override
+    public void onSignInSuccess() {
+        Toast.makeText(this, "登录成功", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onSignUpSuccess() {
+        Toast.makeText(this, "注册成功", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onLauncherFinish(OnLauncherFinishTag tag) {
+        switch (tag) {
+            case SIGNED:
+                Toast.makeText(this, "启动结束，用户登录了", Toast.LENGTH_LONG).show();
+                startWithPop(new ExampleDelegate());
+                break;
+            case NOT_SIGNED:
+                Toast.makeText(this, "启动结束，用户没有登录", Toast.LENGTH_LONG).show();
+                startWithPop(new SignInDelegate());
+                break;
+            default:
+                break;
+        }
     }
 }

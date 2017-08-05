@@ -61,7 +61,6 @@ public class RequestCallbacks implements Callback<String> {
         }
 
         showLoading();
-
     }
 
     private void showLoading() {

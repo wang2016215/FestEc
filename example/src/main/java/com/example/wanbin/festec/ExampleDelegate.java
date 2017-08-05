@@ -37,7 +37,7 @@ public class ExampleDelegate extends LatteDelegate {
     public void onBindView(@Nullable Bundle savedInstanceState, View rootView) {
         // testRestClient();
         // testRxRestClient();
-        onCallRxRestClient();
+        // onCallRxRestClient();
     }
 
     // TODO: 2017/7/29 测试没什么用
