@@ -26,6 +26,6 @@ dependencies {
     })
     testCompile 'junit:junit:4.12'
     compile project(':latte-ec')
-    annotationProcessor  project(':latte-compile')
-
+    annotationProcessor project(':latte-compile')
+    compile project(':latte-annotations')
 }
