@@ -23,6 +23,8 @@ public class ExampleApp extends Application {
                 withIcon(new FontAwesomeModule()).
                 withIcon(new FontEcModule()).
                 withLoaderDelayed(1000).
+                withWeChatAppId("").
+                withWeChatAppSecret("").
                 withInterceptor(new DebugInterceptor("index", R.raw.test)).
                 configure();
 
