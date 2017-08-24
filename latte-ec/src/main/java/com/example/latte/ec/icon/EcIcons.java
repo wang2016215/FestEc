@@ -8,7 +8,7 @@ import com.joanzapata.iconify.Icon;
 
 public enum EcIcons implements Icon {
 
-
+    icon_scan('\ue602'),
     icon_ceshi('\ue606');
 
     private char character;

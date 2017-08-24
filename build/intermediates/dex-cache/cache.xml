@@ -7,7 +7,7 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="2778ef891c116e592dd57bf9343a14671c5c04c8">
+        sha1="eb3e3e17784581055bf994712164335cfec937ec">
         <dex dex="E:\work\FestEc\example\build\intermediates\pre-dexed\debug\latte-annotations_b7c20754b457cd62bbd6b70ec4f8d469385334a2.jar" />
     </item>
     <item
@@ -16,17 +16,8 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="c52fa1a13a93bf9da6ddecd31e9ad7124e40e3e3">
+        sha1="dc94f1f74ed63a2998bbfc9599e004e316461c11">
         <dex dex="E:\work\FestEc\example\build\intermediates\pre-dexed\debug\classes_c7a1249ee599e21305575abb0a2ddf96e91878e3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\wanbin\.gradle\caches\modules-2\files-2.1\com.tencent.mm.opensdk\wechat-sdk-android-with-mta\1.4.0\55f95375f268e0cd7ebe65f433969233990b12b7\wechat-sdk-android-with-mta-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="55f95375f268e0cd7ebe65f433969233990b12b7">
-        <dex dex="E:\work\FestEc\example\build\intermediates\pre-dexed\debug\wechat-sdk-android-with-mta-1.4.0_c86e83c3f1076e34f4cc4f228d944da6596db0d8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -34,7 +25,7 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="6b25d9a17a683f4f92bae468450770d7562cc071">
+        sha1="3c5e90db5d702167e52ead45d952e5482a581b0a">
         <dex dex="E:\work\FestEc\example\build\intermediates\pre-dexed\debug\classes_48cb9fa5863d3f17f3a2b859861e16862f6f7059.jar" />
     </item>
 
